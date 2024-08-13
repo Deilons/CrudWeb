@@ -34,14 +34,12 @@
     </div>
     </nav>
     </header> *@
-    
-    <header class="p-3 mb-3 border-bottom">
-        <div class="container">
+
+    <header class="p-3 mb-3 border-bottom bg-ligh">
+        <div class="container ">
             <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
                 <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
-                    <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
-                        <use xlink:href="#bootstrap" />
-                    </svg>
+                    <i class="bi bi-discord"></i>
                 </a>
 
                 <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
@@ -76,18 +74,101 @@
 
     <div class="container">
         <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-        
 
-        
+            @RenderBody()
+            <div class="container px-4 py-5" id="hanging-icons">
+                <h2 class="pb-2 border-bottom ">CRUD</h2>
+                <div class="row g-4 py-5 row-cols-1 row-cols-lg-4">
+                    <div class="col d-flex align-items-start">
+                        <div class="icon-square text-dark flex-shrink-0 me-3">
+                            <i class="bi bi-person-plus"></i>
+                        </div>
+                        <div>
+                            <h2>Create</h2>
+                            <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with
+                                another sentence and probably just keep going until we run out of words.</p>
+                            <a href="#" class="btn btn-primary">
+                                Primary button
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col d-flex align-items-start">
+                        <div class="icon-square text-dark flex-shrink-0 me-3">
+                            <i class="bi bi-book"></i>
+                        </div>
+                        <div>
+                            <h2>Read</h2>
+                            <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with
+                                another sentence and probably just keep going until we run out of words.</p>
+                            <a href="/Privacy" class="btn btn-primary">
+                                Primary button
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col d-flex align-items-start">
+                        <div class="icon-square text-dark flex-shrink-0 me-3">
+                            <i class="bi bi-pencil-square"></i>
+                        </div>
+                        <div>
+                            <h2>Edit</h2>
+                            <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with
+                                another sentence and probably just keep going until we run out of words.</p>
+                            <a href="#" class="btn btn-primary">
+                                Primary button
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col d-flex align-items-start">
+                        <div class="icon-square text-dark flex-shrink-0 me-3">
+                            <i class="bi bi-person-x"></i>
+                        </div>
+                        <div>
+                            <h2>Delete</h2>
+                            <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with
+                                another sentence and probably just keep going until we run out of words.</p>
+                            <a href="#" class="btn btn-primary">
+                                Primary button
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+
+
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2024 - CrudWeb - <a asp-area="" asp-page="/Privacy">Privacy</a>
-        </div>
-    </footer>
+    @* <footer class="border-top footer text-muted">
+    <div class="container">
+    &copy; 2024 - CrudWeb - <a asp-area="" asp-page="/Privacy">Privacy</a>
+    </div>
+    </footer> *@
+
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <div class="col-md-4 d-flex align-items-center">
+                <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                    <svg class="bi" width="30" height="24">
+                        <use xlink:href="#bootstrap" />
+                    </svg>
+                </a>
+                <span class="mb-3 mb-md-0 text-muted">&copy; 2022 Company, Inc</span>
+            </div>
+
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24">
+                            <use xlink:href="#twitter" />
+                        </svg></a></li>
+                <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24">
+                            <use xlink:href="#instagram" />
+                        </svg></a></li>
+                <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24">
+                            <use xlink:href="#facebook" />
+                        </svg></a></li>
+            </ul>
+        </footer>
+    </div>
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
